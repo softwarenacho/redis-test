@@ -1,0 +1,12 @@
+Fibonnaci calculator (try a few between 30 and 40)
+<%= form_tag("/") do %>
+  <%= text_field_tag(:value,@value) %>
+  <%= submit_tag(:calculate) %>
+<% end %>
+
+Past completed calculations
+<ul>
+  <% @bottom.each do |value| %>
+    <li><%= value %></li>
+  <% end %>
+</ul>
